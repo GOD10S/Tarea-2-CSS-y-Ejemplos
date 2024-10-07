@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla con Header y Dos Columnas</title>
+    <style>
+        /* Estilos para el header */
+        header {
+            background-color: #4CAF50; /* Color de fondo verde */
+            color: white; /* Texto en blanco */
+            padding: 10px;
+            text-align: center;
+            font-size: 24px;
+            border: 2px solid #388E3C; /* Borde verde oscuro */
+        }
+
+        /* Estilos para los párrafos flotantes */
+        .column {
+            width: 45%; /* Cada columna ocupa el 45% del ancho */
+            float: left; /* Alinea las columnas a la izquierda */
+            margin: 5px;
+            padding: 10px;
+            border: 2px solid #008CBA; /* Borde azul */
+            background-color: #f1f1f1; /* Color de fondo gris claro */
+        }
+
+        /* Para limpiar los floats y asegurar que el contenedor tenga el tamaño correcto */
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Encabezado Principal
+    </header>
+
+    <div class="clearfix">
+        <p class="column">
+            Este es el primer párrafo. Está alineado como una columna flotante a la izquierda. Aquí puedes agregar cualquier contenido que desees.
+        </p>
+
+        <p class="column">
+            Este es el segundo párrafo. Está alineado como una columna flotante junto al primer párrafo. Aquí puedes agregar más contenido.
+        </p>
+    </div>
+
+</body>
+</html>

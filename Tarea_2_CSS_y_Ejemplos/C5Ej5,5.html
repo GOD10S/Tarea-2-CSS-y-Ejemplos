@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esquinas Redondeadas</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 3px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+        .box1 {
+            background-color: #ff5733; /* Color de fondo para el primer div */
+            border-radius: 10px; /* Esquinas ligeramente redondeadas */
+        }
+        .box2 {
+            background-color: #33ff57; /* Color de fondo para el segundo div */
+            border-radius: 50px; /* Esquinas más redondeadas */
+        }
+        .box3 {
+            background-color: #3357ff; /* Color de fondo para el tercer div */
+            border-radius: 100px; /* Esquinas completamente redondeadas */
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1">Border-Radius: <strong>10px</strong></div>
+    <div class="box box2">Border-Radius: <strong>50px</strong></div>
+    <div class="box box3">Border-Radius: <strong>100px</strong></div>
+</body>
+</html>

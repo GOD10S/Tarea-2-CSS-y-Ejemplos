@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflejo de Imagen</title>
+    <style>
+        .container {
+            position: relative;
+            display: inline-block;
+        }
+
+        .original, .reflection {
+            width: 500px; /* Establecer el mismo tamaño para ambas imágenes */
+            height: 500px;
+        }
+
+        .reflection {
+            position: absolute;
+            top: 0;
+            left: calc(100% + 20px); /* 20px a la derecha de la imagen original */
+            transform: scaleX(-1); /* Reflejo horizontal */
+            opacity: 0.5; /* Hacer que el reflejo sea más tenue */
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Reflejo de una Imagen</h1>
+
+    <div class="container">
+        <img src="500x500.jpg" alt="Imagen Original" class="original">
+        <img src="500x500.jpg" alt="Reflejo" class="reflection">
+    </div>
+
+</body>
+</html>

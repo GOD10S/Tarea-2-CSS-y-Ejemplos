@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Fusión de Imágenes</title>
+    <style type="text/css">
+        #portada {
+            position: relative;
+            margin: 0 auto;
+            width: 300px; /* Ajusta el ancho según tus imágenes */
+            height: 300px; /* Ajusta la altura según tus imágenes */
+        }
+        #portada img {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%; /* Asegúrate de que las imágenes se ajusten al contenedor */
+            height: 100%; /* Asegúrate de que las imágenes se ajusten al contenedor */
+            -webkit-transition: opacity 3s linear; /* Transición para WebKit */
+            transition: opacity 3s linear; /* Transición estándar */
+        }
+        #portada img.top:hover {
+            opacity: 0; /* Desvanecer la imagen al pasar el mouse */
+        }
+        /* Se ajusta el orden de las imágenes */
+        #portada img:nth-child(1) { z-index: 1; }
+        #portada img:nth-child(2) { z-index: 2; }
+        #portada img:nth-child(3) { z-index: 3; }
+        #portada img:nth-child(4) { z-index: 4; }
+        #portada img:nth-child(5) { z-index: 5; }
+    </style>
+</head>
+<body>
+    <div id="portada">
+        <img class="bottom" src="Natanael Cano 1.jpg" alt="Imagen 1">
+        <img class="top" src="Natanael Cano 2.jpg" alt="Imagen 2">
+        <img class="top" src="Natanael Cano 3.jpg" alt="Imagen 3">
+        <img class="top" src="Natanael Cano HBO.jpg" alt="Imagen 4">
+        <img class="top" src="500x500.jpg" alt="Imagen 5">
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inclinación Alternada</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+        .tilted {
+            width: 100px; /* Ancho del elemento */
+            height: 100px; /* Alto del elemento */
+            background-color: deepskyblue; /* Color del elemento */
+            animation: tilt 2s infinite; /* Aplicar la animación */
+        }
+        @keyframes tilt {
+            0% {
+                transform: rotate(0deg); /* Posición inicial */
+            }
+            25% {
+                transform: rotate(30deg); /* Inclinación hacia abajo */
+            }
+            50% {
+                transform: rotate(0deg); /* Regreso a la posición original */
+            }
+            75% {
+                transform: rotate(-30deg); /* Inclinación hacia la izquierda */
+            }
+            100% {
+                transform: rotate(0deg); /* Regreso a la posición original */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="tilted"></div>
+</body>
+</html>

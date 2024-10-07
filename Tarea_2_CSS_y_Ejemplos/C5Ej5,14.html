@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transformación de Imágenes con Hover</title>
+    <style>
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+        }
+
+        .gallery img {
+            width: 200px;
+            height: auto;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.2); /* Aumenta el tamaño de la imagen un 20% */
+        }
+
+        .gallery img {
+            border-radius: 10px; /* Opcional: agrega bordes redondeados */
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3); /* Opcional: agrega sombra a las imágenes */
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center;">Transformación de Imágenes con Hover</h1>
+
+    <div class="gallery">
+        <img src="Natanael Cano 1.jpg" alt="Imagen 1">
+        <img src="Natanael Cano 2.jpg" alt="Imagen 2">
+        <img src="Natanael Cano 3.jpg" alt="Imagen 3">
+        <img src="Natanael Cano HBO.png" alt="Imagen 4">
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradiente Lineal</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .gradient-box {
+            width: 500px;  /* Ancho del div */
+            height: 500px; /* Alto del div */
+            background: linear-gradient(
+                135deg,   /* Ángulo de 135 grados para un gradiente diagonal */
+                red, 
+                orange, 
+                yellow, 
+                green, 
+                blue, 
+                indigo, 
+                violet
+            );
+        }
+    </style>
+</head>
+<body>
+    <div class="gradient-box"></div>
+</body>
+</html>

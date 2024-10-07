@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web Multicolumna</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .column {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33.333% - 20px); /* Tres columnas */
+        }
+
+        /* Consultas de medios */
+        @media (max-width: 768px) {
+            .column {
+                flex: 1 1 calc(50% - 20px); /* Dos columnas para tablets */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .column {
+                flex: 1 1 100%; /* Una columna para dispositivos móviles */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Página Web Multicolumna</h1>
+
+    <div class="container">
+        <div class="column">
+            <h2>Columna 1</h2>
+            <p>Este es un texto de ejemplo para la primera columna. En pantallas más pequeñas, la disposición se ajustará automáticamente.</p>
+        </div>
+        <div class="column">
+            <h2>Columna 2</h2>
+            <p>Este es un texto de ejemplo para la segunda columna. El contenido es flexible y cambia de acuerdo al tamaño de la pantalla.</p>
+        </div>
+        <div class="column">
+            <h2>Columna 3</h2>
+            <p>Este es un texto de ejemplo para la tercera columna. Prueba ajustar el tamaño de la ventana para ver los cambios.</p>
+        </div>
+    </div>
+
+</body>
+</html>

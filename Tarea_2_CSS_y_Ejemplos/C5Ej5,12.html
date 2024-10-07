@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!-- Fig. 5.17: texto_multicolumna.html -->
+<!-- Ejemplo de texto en múltiples columnas con una imagen flotante. -->
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Texto Multicolumna</title>
+    <style type="text/css">
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1, h2, p {
+            text-align: center;
+        }
+
+        #autor {
+            font-style: italic;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .multicolumna {
+            column-count: 2; /* Texto en dos columnas */
+            column-gap: 30px; /* Espacio entre columnas */
+            column-rule: 5px solid darkblue; /* Grosor y color de la regla entre columnas */
+            text-align: justify;
+        }
+
+        img {
+            float: left;
+            margin: 10px 20px 10px 0;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejemplo de Texto Multicolumna</h1>
+    <h2>Nata Montana</h2>
+    <div id="autor">Por: Natanael Cano</div>
+    
+    <div class="multicolumna">
+        <img src="500x500.jpg" alt="Imagen de ejemplo">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ultricies nisl id malesuada suscipit. Fusce accumsan
+            magna vel risus volutpat convallis. Integer sit amet quam libero. Integer a urna malesuada, gravida est nec, mollis
+            arcu. Cras elementum ligula eu magna faucibus, in hendrerit metus hendrerit. Etiam porttitor justo in nulla
+            gravida, eget lobortis nulla luctus. Sed at interdum velit, sed vulputate justo. Integer ut enim sed magna
+            vestibulum tincidunt sed at mi. Nam vitae risus ligula.
+        </p>
+        <p>
+            Aenean sit amet quam quis est ultricies interdum. Nullam accumsan urna nec convallis volutpat. Proin at fringilla
+            nunc. Donec facilisis lobortis magna, ut cursus nunc ullamcorper at. Suspendisse vulputate dapibus turpis in
+            viverra. Cras ac accumsan ligula. Donec euismod ex sit amet lacinia sollicitudin. Ut id convallis dui.
+        </p>
+        <p>
+            Integer malesuada, lacus eu fermentum malesuada, est tortor hendrerit purus, ac feugiat nisi tortor a orci. Vivamus
+            ornare libero at purus venenatis, vel facilisis elit pretium. Sed suscipit tempor felis, nec sollicitudin ligula
+            lacinia vel. Cras gravida mi ac lacus rhoncus rhoncus.
+        </p>
+    </div>
+</body>
+</html>
